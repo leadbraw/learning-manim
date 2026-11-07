@@ -1,0 +1,14 @@
+**/media/
+**/partial_movie_files/
+
+**/__pycache__/_*
+*.mp4
+*.png
+*.gif
+
+__pycache__/
+*.py[cod]
+*$py.class
+
+.vscode/
+
