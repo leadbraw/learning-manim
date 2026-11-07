@@ -40,4 +40,11 @@ class animation(Scene):
         self.play(Indicate(t[3], color=RED), Indicate(r4, color=RED, scale_factor=0.3), run_time=0.75)
         self.play(Indicate(t[4], color=RED), Indicate(r5, color=RED, scale_factor=0.3), run_time=0.75)
 
+        group3 = VGroup(group, t, s1, s2) # remember, group2 doesnt exist anymore. so this group has everything on screen.
+        d = Dot(color=RED)
+
+        self.play(ReplacementTransform(group3, d))
+        self.play(d.animate.scale(150))
+        self.play(FadeOut(d))
+
         self.wait(3)
